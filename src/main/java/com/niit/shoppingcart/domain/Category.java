@@ -1,5 +1,6 @@
 package com.niit.shoppingcart.domain;
 
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -20,6 +21,18 @@ public class Category {
 	private String name;
 	private String description;
 	private Set<Product> products;
+	/*private List<String> categoryList;
+	
+	
+	
+	
+	
+	public List<String> getCategoryList() {
+		return categoryList;
+	}
+	public void setCategoryList(List<String> categoryList) {
+		this.categoryList = categoryList;
+	}*/
 	//if the releation is one to many
 	@OneToMany(mappedBy="category",fetch=FetchType.EAGER)
 	public Set<Product> getProducts() {

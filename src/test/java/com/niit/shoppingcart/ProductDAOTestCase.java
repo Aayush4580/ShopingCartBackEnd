@@ -29,7 +29,7 @@ public class ProductDAOTestCase {
 	public static void initialize()
 	{
 		context = new AnnotationConfigApplicationContext();
-		context.scan("com.niit");
+		context.scan("com.niit.shoppingcart");
 		context.refresh();
 		
 		//get the productDAO from context
@@ -44,12 +44,12 @@ public class ProductDAOTestCase {
 	@Test
 	public void createProductTestCase()
 	{
-		product.setId("101");
-		product.setName("swarup");
-		product.setDescription("electrical");
-		product.setPrice("10000");
-		product.setCategory_id("111");
-		product.setSupplier_id("kkkk");
+		product.setId("010");
+		product.setName("nokia");
+		product.setPrice(35000);
+		product.setDescription("nokia phone");
+		product.setCategory_id("Electronics_004");
+		product.setSupplier_id("1002");
 		boolean flag =  productDAO.save(product);
 	
 

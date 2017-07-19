@@ -69,7 +69,6 @@ public class UserdaoImpl implements UserDAO{
 	//in the User table with this id and password there will one or zero records will exist
 	//i.e.,uniqueresult
 	
-	System.out.println("0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
 	if(query.uniqueResult()==null)
 	{
 		//means no row exist,invalid credentials

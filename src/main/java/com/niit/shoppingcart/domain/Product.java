@@ -4,10 +4,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
 @Entity
+@Table(name="Product")
 @Component
 public class Product {
 	
@@ -15,7 +17,7 @@ public class Product {
 	private String id;
 	private String name;
 	private String description;
-	private String price;
+	private double price;
 	private String Category_id;
 	private String Supplier_id;
 	
@@ -45,10 +47,10 @@ public class Product {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getPrice() {
+	public double getPrice() {
 		return price;
 	}
-	public void setPrice(String price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 	public String getCategory_id() {
@@ -62,6 +64,18 @@ public class Product {
 	}
 	public void setSupplier_id(String supplier_id) {
 		Supplier_id = supplier_id;
+	}
+	public Category getCategory() {
+		return category;
+	}
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+	public Category getSupplier() {
+		return supplier;
+	}
+	public void setSupplier(Category supplier) {
+		this.supplier = supplier;
 	}
 	
 	

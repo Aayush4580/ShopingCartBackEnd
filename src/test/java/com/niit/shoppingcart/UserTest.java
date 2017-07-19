@@ -5,6 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class UserTest {
 
 	
+	@SuppressWarnings("resource")
 	public static void main(String[] args) 
 	{
 		//this context is bean factory

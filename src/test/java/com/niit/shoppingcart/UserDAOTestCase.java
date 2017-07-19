@@ -44,11 +44,11 @@ public class UserDAOTestCase {
 	@Test
 	public void createUserTestCase()
 	{
-		user.setId("1005");
-		user.setName("souvik");
+		user.setId("1006");
+		user.setName("Rahul");
 		user.setPassword("lumia");
 		user.setRole("ROLE_USER");
-		user.setContact("454545454");
+		user.setContact("585857596");
 		boolean flag =  userDAO.save(user);
 	
 
